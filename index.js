@@ -1,6 +1,7 @@
-require('dotenv').config()
-const express = require('express')
+import dotenv from 'dotenv';
+import express from 'express'
 const app = express();
+dotenv.config();
 
 app.get('/', (req, res) => {
   res.send('Get Request');
